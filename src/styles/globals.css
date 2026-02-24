@@ -1,0 +1,185 @@
+/* ===============================
+   RESET CSS MODERNO (BASE LIMPIA)
+================================ */
+
+/* Modelo de caja predecible */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Altura completa del documento */
+html,
+body {
+  height: 100%;
+}
+
+/* Quitamos margen por defecto SOLO del body */
+body {
+  margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Media responsive por defecto */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Formularios heredan tipografía */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Mejora UX en desktop */
+button {
+  cursor: pointer;
+}
+
+/* Evita desbordes de palabras largas */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Listas sin estilos por defecto */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Links sin decoración base */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===============================
+   ACCESIBILIDAD
+================================ */
+
+/* Foco visible claro y elegante */
+:focus-visible {
+  outline: 3px solid rgba(214, 180, 108, 0.55);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Respeta usuarios que prefieren menos animaciones */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
+  }
+}
+
+/* ===============================
+   ESTRUCTURA BASE
+================================ */
+
+.header {
+  padding-block: var(--space-6);
+}
+
+.main {
+  padding-bottom: var(--space-7);
+}
+
+.footer {
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--border);
+  margin-top: var(--space-7);
+}
+
+/* ===============================
+   TIPOGRAFÍA BASE
+================================ */
+
+.tagline {
+  margin-bottom: var(--space-2);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.title {
+  font-size: clamp(28px, 5vw, 44px);
+  margin-bottom: var(--space-5);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  transition: transform var(--transition) var(--ease),
+    background var(--transition) var(--ease),
+    border-color var(--transition) var(--ease);
+}
+
+.btn:hover {
+  background: var(--surface-2);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: rgba(214, 180, 108, 0.16);
+  border-color: rgba(214, 180, 108, 0.35);
+}
+
+.btn-primary:hover {
+  background: rgba(214, 180, 108, 0.22);
+  border-color: rgba(214, 180, 108, 0.5);
+}
+
+/* ===============================
+   SECCIONES
+================================ */
+
+.section {
+  padding: var(--space-5);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-4);
+}

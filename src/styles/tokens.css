@@ -1,0 +1,79 @@
+:root {
+  /* ===============================
+     TIPOGRAFÍA
+  =============================== */
+
+  /* Fuente principal sans-serif */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, Inter, Arial, "Noto Sans", sans-serif;
+
+  /* ===============================
+     COLORES (ESTILO ELEGANTE)
+  =============================== */
+
+  /* Fondo principal de la app */
+  --bg: #0b0d10;
+
+  /* Fondo de tarjetas / superficies */
+  --surface: #10141a;
+
+  /* Fondo para hover o elevaciones suaves */
+  --surface-2: #151b23;
+
+  /* Texto principal */
+  --text: #eef2f6;
+
+  /* Texto secundario / menos importante */
+  --muted: #aab4c0;
+
+  /* Bordes sutiles */
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* Color primario (acento elegante tipo dorado suave) */
+  --primary: #d6b46c;
+
+  /* Variante para hover del primario */
+  --primary-2: #e7c987;
+
+  /* ===============================
+     ESPACIADO (sistema consistente)
+  =============================== */
+
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;  /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem;    /* 16px */
+  --space-5: 1.5rem;  /* 24px */
+  --space-6: 2rem;    /* 32px */
+  --space-7: 3rem;    /* 48px */
+
+  /* ===============================
+     RADIOS (bordes redondeados)
+  =============================== */
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  /* ===============================
+     SOMBRAS
+  =============================== */
+
+  --shadow-1: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 12px 40px rgba(0, 0, 0, 0.5);
+
+  /* ===============================
+     CONTENEDOR
+  =============================== */
+
+  /* Ancho máximo del layout */
+  --container: 1100px;
+
+  /* ===============================
+     TRANSICIONES
+  =============================== */
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-fast: 120ms;
+  --transition: 180ms;
+}
